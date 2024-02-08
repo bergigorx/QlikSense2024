@@ -1,0 +1,65 @@
+// =====> Código para zebrar a tabela no Qlik Sense <===== //
+
+	if(Even(RowNo(total)) = 0, 	 	
+		White(),         
+		Rgb(240,240,240)  
+	)
+
+
+// =====> Execute no Sense <===== //
+
+
+EXECUTE cmd.exe /C copy "C:\Users\SavioBueno\Documents\Qlik\Sense\Apps\Exemplos\teste.qvf" "D:\";
+
+
+// ==========> Utilizando SETAS e outras formas em objeto do tipo tabela no Qlik Sense <========== //
+
+	Conditional Arrows in a table in QlikSense:
+	https://community.qlik.com/t5/New-to-Qlik-Sense/Conditional-Arrows-in-a-table-in-QlikSense/m-p/1358910
+
+	How to create arrows:
+	https://community.qlik.com/t5/QlikView-App-Development/How-to-create-arrows/m-p/384000
+
+	Conditional Performance Indicators in Tables using HTML Unicode Chr() Values
+	https://community.qlik.com/t5/Qlik-Sense-Enterprise-Documents/Conditional-Performance-Indicators-in-Tables-using-HTML-Unicode/ta-p/1481558
+
+// ==========> MAPA NO QLIK SENSE - usando CEP <========== //
+
+	https://community.qlik.com/t5/Qlik-Brasil/MAPA-NO-QLIK-SENSE-usando-CEP/gpm-p/139403#M7722
+
+
+// ==========> Criando um Hash no Qlik Sense <========== //
+
+ autonumberhash128(campos chave) as nome_do_campo
+
+// ==========> Utilizar o comando Execute no Qlik Sense <========== //
+
+	Qlik Sense Legacy mode
+	https://community.qlik.com/t5/Qlik-Design-Blog/Qlik-Sense-Legacy-mode/ba-p/1470523
+
+
+	EXECUTE statement requires Override Security
+	https://community.qlik.com/t5/New-to-Qlik-Sense/quot-EXECUTE-statement-requires-Override-Security-quot/td-p/1128305
+
+// ==========> Parar/Sair do código no Qlik Sense <========== //
+
+	Exit script;
+
+// ==========> Marcar uma parte do código no Qlik Sense <========== //
+
+	trace;
+
+
+// ==========> Criar tabela inline no Qlik Sense <========== //
+
+LOAD * INLINE [
+ID, Nome, Cargo
+1, João, Diretor
+2, Helena, Diretor
+3, Vitória, Gerente
+4, Jorge, Gerente
+];
+
+// ==========> Advanced Analytics no Qlik Sense <========== //
+
+https://developer.qlik.com/garden/5979da222ef8975d99132f88 // AAI Advanced Analytics Integration
